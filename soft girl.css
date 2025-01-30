@@ -1,0 +1,197 @@
+/* Apply a dreamy background */
+.soft-girl-theme {
+    background: linear-gradient(to bottom right, #FFD1DC, #FFB6C1); /* Soft pink gradient */
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.soft-girl-title {
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    color: #FF69B4;
+    text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.5);
+}
+
+.soft-girl-subtext {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #99627A;
+}
+
+.hero-image {
+    width: 20%;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px (255, 105, 180, 0.3);
+}
+
+/* Outfit Section */
+.outfit-section h2, .accessories-section h2, .style-tips h2 {
+    font-size: 2rem;
+    color: #FF69B4;
+}
+
+.outfit-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.outfit-card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.outfit-card img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.outfit-card:hover {
+    transform: scale(1.05);
+}
+
+/* Accessories Section (Carousel Style) */
+.accessories-carousel {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+    padding: 10px;
+    scrollbar-width: none;
+}
+
+.accessories-carousel img {
+    width: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.accessories-carousel img:hover {
+    transform: scale(1.1);
+}
+
+/* Style Tips */
+.style-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.style-tips li {
+    font-size: 1.2rem;
+    background: white;
+    padding: 10px;
+    margin: 10px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Call to Action Button */
+.soft-girl-btn {
+    background: #FF69B4;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
+}
+
+.soft-girl-btn:hover {
+    background: #ff4584;
+    transform: scale(1.1);
+}
+.mood-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.mood-btn {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mood-btn:hover {
+    background-color: #ff1493;
+}
+.color-palette {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.palette-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.softgirl-checklist {
+    text-align: center;
+    background-color: #FFF0F5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.softgirl-checklist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.softgirl-checklist li {
+    font-size: 1.2rem;
+    padding: 8px;
+    color: #ff69b4;
+}
+
+
+.softgirl-slideshow {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}

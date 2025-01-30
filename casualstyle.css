@@ -1,0 +1,125 @@
+/* General Body Styling */
+body.casual-theme {
+    background-color: #f5f5f5; /* Light gray background for neutral look */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.casual-header {
+    background: url('images/casual-banner.jpg') no-repeat center center; /* Casual image as background */
+    background-size: cover;
+    text-align: center;
+    padding: 80px 20px;
+    color: rgb(26, 23, 23);
+}
+
+.casual-header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.casual-header p {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* Outfit Section */
+.casual-outfits {
+    padding: 40px;
+    text-align: center;
+}
+
+.outfit-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.outfit-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.outfit-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.outfit-card p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.outfit-card button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.outfit-card button:hover {
+    background: #555;
+    transform: scale(1.1);
+}
+
+/* Accessories Section */
+.casual-accessories {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.accessory-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.accessory-grid img {
+    width: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.accessory-grid img:hover {
+    transform: scale(1.1);
+}
+
+/* Call to Action Section */
+.cta-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #2476e2;
+}
+
+.shop-now-btn {
+    background: #0c0245;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(255, 20, 147, 0.5);
+    transition: all 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background: hsl(233, 81%, 71%);
+    transform: scale(1.1);
+}

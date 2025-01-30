@@ -1,0 +1,646 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    margin-top: 40px;
+}
+.title {
+    font-family: 'Dancing Script', cursive; /* Fancy calligraphy font */
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+    color: #2e2e2e; /* Choose a color that fits your design */
+}
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* This ensures vertical centering */
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Main Content */
+.main {
+    margin-top: 40px;
+}
+
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+/* Category Card Container */
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px; /* Adjusted size */
+    padding: 15px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Hover Effect */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Category Images */
+.category-image {
+    width: 100%;
+    height: 140px; /* Smaller image */
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Image Hover Effect */
+.category-card:hover .category-image {
+    transform: scale(1.05); /* Slight zoom effect */
+    filter: brightness(90%);
+}
+
+/* Calligraphy Font for Buttons */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+.category-btn {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.2em;
+    font-family: 'Dancing Script', cursive; /* Calligraphy Font */
+    color: #444;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Buttons */
+.category-btn:hover {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Category Container */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+/* Search Bar Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 250px;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ff9a9e;
+    border-radius: 15px;
+    outline: none;
+}
+
+/* Search Button */
+.search-btn {
+    padding: 10px 15px;
+    margin-left: 10px;
+    font-size: 1em;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    background: linear-gradient(to right, #ff4e60, #ff6a89);
+}
+
+/* Trending Section */
+.trending-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Trending Items */
+.trending-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+/* Individual Trending Outfit */
+.trending-item {
+    width: 200px;
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.trending-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.trending-item:hover {
+    transform: scale(1.05);
+}
+
+/* Newsletter Section */
+.newsletter {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Newsletter Input */
+.newsletter-input {
+    width: 250px;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ff9a9e;
+    border-radius: 15px;
+    outline: none;
+}
+
+/* Subscribe Button */
+.subscribe-btn {
+    padding: 10px 15px;
+    margin-left: 10px;
+    font-size: 1em;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background: linear-gradient(to right, #ff4e60, #ff6a89);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fashion Tips Section */
+.fashion-tips {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Tip Cards */
+.tips-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.tip-card {
+    width: 250px;
+    padding: 20px;
+    background: #ffebcd;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Tip Titles */
+.tip-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Tip Description */
+.tip-card p {
+    font-size: 1em;
+    color: #444;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Footer Links */
+.social-link {
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-link:hover {
+    color: #ff9a9e;
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Testimonial Container */
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Testimonial Card */
+.testimonial {
+    width: 300px;
+    padding: 20px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.customer {
+    font-style: italic;
+    color: #888;
+}
+
+
+/* Suggestions Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 0 10px;
+}
+
+nav a.active {
+    border-bottom: 2px solid #ff758c;
+}
+
+/* Suggestions Section Title */
+.suggestions-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.suggestions-section h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.suggestions-section p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Suggestions Container */
+.suggestions-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Suggestion Item */
+.suggestion-item {
+    width: 250px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.suggestion-item:hover {
+    transform: translateY(-5px);
+}
+
+.suggestion-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.suggestion-item p {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* View Details Button */
+.view-details {
+    background-color: #ff758c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.view-details:hover {
+    background-color: #ff7eb3;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+/* Suggestions Section */
+.suggestions-section {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.suggestions-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.suggestions-section p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.suggestions-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.suggestion-item {
+    width: 250px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.suggestion-item:hover {
+    transform: translateY(-5px);
+}
+
+.suggestion-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.suggestion-item p {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.view-details {
+    background-color: #ff758c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.view-details:hover {
+    background-color: #ff7eb3;
+    transform: translateY(-3px);
+}
+
+/* Carousel Section */
+.carousel-section {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.carousel-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-item {
+    min-width: 300px;
+    margin: 0 10px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-item p {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Add animation for carousel transition */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel-container {
+    animation: slide 100s infinite;
+}
+
+/* Look of the Day Section */
+.look-of-the-day {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.look-of-the-day h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.look-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.look-container img {
+    width: 50%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.look-container img:hover {
+    transform: scale(1.05);
+}
+
+.look-info {
+    text-align: left;
+    max-width: 300px;
+}
+
+.look-info p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.shop-now {
+    background-color: #ff758c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.shop-now:hover {
+    background-color: #ff7eb3;
+    transform: translateY(-3px);
+}
+/* My Wardrobe Section */
+.my-wardrobe {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.my-wardrobe h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.my-wardrobe p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.my-wardrobe button {
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.my-wardrobe button:hover {
+    background-color: #5a4bcf;
+}
